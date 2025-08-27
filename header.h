@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   header.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 12:42:52 by codespace         #+#    #+#             */
-/*   Updated: 2025/08/26 15:12:14 by codespace        ###   ########.fr       */
+/*   Updated: 2025/08/27 20:21:58 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdarg.h>
 #include <unistd.h>
 
-int ft_printf(const char *, ...);
+int ft_printf(const char *format, ...);

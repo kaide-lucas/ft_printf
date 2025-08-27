@@ -1,40 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 14:54:54 by codespace         #+#    #+#             */
-/*   Updated: 2025/08/27 21:19:04 by kaidda-s         ###   ########.fr       */
+/*   Created: 2025/08/27 19:13:06 by kaidda-s          #+#    #+#             */
+/*   Updated: 2025/08/27 20:21:58 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 
-int	ft_putchar(char c)
+int main(void)
 {
-	write (1, &c, 1);
-	return (1);
-}
-
-static conversion(char , va_list args)
-
-int	ft_printf(const char *format, ...)
-{
-	va_list	args;
-	int		i;
-	int		count;
-
-	i = 0;
-	count = 0;
-	va_start(args, format);
-	while (format[i])
-	{
-		write (1, &format[i], 1);
-		count++;
-		i++;
-	}
-	va_end (args);
-	return (count);
+	ft_printf("%c", 'a');
+	return (0);
 }
