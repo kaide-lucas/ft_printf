@@ -6,14 +6,14 @@
 #    By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/26 12:41:17 by codespace         #+#    #+#              #
-#    Updated: 2025/08/27 20:21:58 by kaidda-s         ###   ########.fr        #
+#    Updated: 2025/08/28 20:38:15 by kaidda-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
-CC = CC
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRC = ft_printf.c 
+SRC = ft_printf.c ft_auxiliaries.c main.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

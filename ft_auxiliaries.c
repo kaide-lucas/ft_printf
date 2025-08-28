@@ -1,19 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.h                                           :+:      :+:    :+:   */
+/*   ft_auxiliaries.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 12:42:52 by codespace         #+#    #+#             */
-/*   Updated: 2025/08/28 17:47:52 by kaidda-s         ###   ########.fr       */
+/*   Created: 2025/08/28 15:06:11 by kaidda-s          #+#    #+#             */
+/*   Updated: 2025/08/28 20:15:31 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
-#include <unistd.h>
+#include "header.h"
 
-int	ft_printf(const char *format, ...);
-int	ft_putchar(char c);
-int	print_char(va_list args);
-int	ft_str(char const *str);
+int	ft_putchar(char c)
+{
+	write (1, &c, 1);
+	return (1);
+}
+
+int	print_char(va_list args)
+{
+	char	c;
+
+	c = (char)va_arg(args, int);
+	return (ft_putchar(c));
+}
+
+int	ft_putstr(char *s)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar(s[i]);
+		i++;
+	}
+	return (i);
+}

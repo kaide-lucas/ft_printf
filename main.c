@@ -6,14 +6,14 @@
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 19:13:06 by kaidda-s          #+#    #+#             */
-/*   Updated: 2025/08/27 20:21:58 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/08/28 21:54:23 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 
-int main(void)
+int	main(void)
 {
-	ft_printf("%c", 'a');
+	ft_printf("%s", "Abacate");
 	return (0);
 }
