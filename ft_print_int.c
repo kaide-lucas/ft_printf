@@ -1,25 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.h                                           :+:      :+:    :+:   */
+/*   ft_print_int.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 12:42:52 by codespace         #+#    #+#             */
-/*   Updated: 2025/09/03 22:45:09 by kaidda-s         ###   ########.fr       */
+/*   Created: 2025/09/03 20:19:11 by kaidda-s          #+#    #+#             */
+/*   Updated: 2025/09/03 22:32:23 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "header.h"
 
-#include <stdarg.h>
-#include <unistd.h>
+int	ft_putnbr(int n)
+{
+	long	num;
+	int		i;
 
-int	ft_printf(const char *format, ...);
-int	ft_putchar(char c);
-int	print_char(va_list args);
-int	print_str(char *s);
-int	print_int(va_list args);
+	num = n;
+	i = 0;
+	if (num < 0)
+	{
+		i += ft_putchar('-');
+		num = -num;
+	}
+	if (num >= 10)
+		i += ft_putnbr(num / 10);
+	i += ft_putchar((num % 10) + '0');
+	return (i);
+}
 
-#endif
+int	print_int(va_list args)
+{
+	int	n;
+
+	n = va_arg(args, int);
+	return (ft_putnbr(n));
+}

@@ -6,7 +6,7 @@
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 19:13:06 by kaidda-s          #+#    #+#             */
-/*   Updated: 2025/08/28 21:54:23 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/09/03 22:38:37 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int	main(void)
 {
-	ft_printf("Nome: %s", "Abacate");
+	ft_printf("%d", 42);
 	return (0);
 }

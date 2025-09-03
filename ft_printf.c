@@ -6,7 +6,7 @@
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 14:54:54 by codespace         #+#    #+#             */
-/*   Updated: 2025/08/28 21:41:36 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/09/03 22:38:04 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ static int	conversion(char spec_letter, va_list args)
 		return (write(1, "%", 1));
 	else if (spec_letter == 's')
 		return (print_str(va_arg(args, char *)));
+	else if (spec_letter == 'd')
+		return (print_int(args));
 	else
 		return (0);
 }
