@@ -14,6 +14,6 @@
 
 int	main(void)
 {
-	ft_printf("%s", "Abacate");
+	ft_printf("Nome: %s", "Abacate");
 	return (0);
 }

@@ -26,7 +26,7 @@ int	print_char(va_list args)
 	return (ft_putchar(c));
 }
 
-int	ft_putstr(char *s)
+int	print_str(char *s)
 {
 	int	i;
 

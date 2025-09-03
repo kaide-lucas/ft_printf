@@ -19,7 +19,7 @@ static int	conversion(char spec_letter, va_list args)
 	else if (spec_letter == '%')
 		return (write(1, "%", 1));
 	else if (spec_letter == 's')
-		return (print_char(args));
+		return (print_str(va_arg(args, char *)));
 	else
 		return (0);
 }

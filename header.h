@@ -16,4 +16,5 @@
 int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);
 int	print_char(va_list args);
+int	print_str(char *s);
 int	ft_str(char const *str);
