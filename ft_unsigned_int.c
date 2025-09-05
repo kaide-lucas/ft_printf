@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.h                                           :+:      :+:    :+:   */
+/*   ft_unsigned_int.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 12:42:52 by codespace         #+#    #+#             */
-/*   Updated: 2025/09/05 21:37:56 by kaidda-s         ###   ########.fr       */
+/*   Created: 2025/09/05 15:08:32 by kaidda-s          #+#    #+#             */
+/*   Updated: 2025/09/05 21:50:00 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "header.h"
 
-#include <stdarg.h>
-#include <unistd.h>
+int	ft_unsigned(unsigned int n)
+{
+	long	num;
+	int		i;
 
-int	ft_printf(const char *format, ...);
-int	ft_putchar(char c);
-int	print_char(va_list args);
-int	print_str(char *s);
-int	print_int(va_list args);
-int	print_unsigned(va_list args);
-int	ft_hexa(unsigned long int n, const char *base);
-int print_hexa(va_list args);
-int	print_hexa_upper(va_list args);
+	num = n;
+	i = 0;
+	if (num >= 10)
+		i += ft_unsigned(num / 10);
+	i += ft_putchar((num % 10) + '0');
+	return (i);
+}
 
-#endif
+int	print_unsigned(va_list args)
+{
+	unsigned int	n;
+
+	n = va_arg(args, unsigned int);
+	return (ft_unsigned(n));
+}

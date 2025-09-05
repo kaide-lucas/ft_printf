@@ -1,29 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.h                                           :+:      :+:    :+:   */
+/*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 12:42:52 by codespace         #+#    #+#             */
-/*   Updated: 2025/09/05 21:37:56 by kaidda-s         ###   ########.fr       */
+/*   Created: 2025/09/05 21:51:45 by kaidda-s          #+#    #+#             */
+/*   Updated: 2025/09/05 21:53:08 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "header.h"
 
-#include <stdarg.h>
-#include <unistd.h>
-
-int	ft_printf(const char *format, ...);
-int	ft_putchar(char c);
-int	print_char(va_list args);
-int	print_str(char *s);
-int	print_int(va_list args);
-int	print_unsigned(va_list args);
-int	ft_hexa(unsigned long int n, const char *base);
-int print_hexa(va_list args);
-int	print_hexa_upper(va_list args);
-
-#endif
