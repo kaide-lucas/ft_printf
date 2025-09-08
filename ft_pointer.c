@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: kaidda-s <kaidda-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 21:51:45 by kaidda-s          #+#    #+#             */
-/*   Updated: 2025/09/08 14:55:06 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/09/08 12:52:11 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "ft_printf.h"
 
 int	ft_pointer(unsigned long ptr)
 {

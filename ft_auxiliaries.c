@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_auxiliaries.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: kaidda-s <kaidda-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 15:06:11 by kaidda-s          #+#    #+#             */
-/*   Updated: 2025/09/05 21:46:10 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/09/08 14:37:05 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {
@@ -30,6 +30,11 @@ int	print_str(char *s)
 	int	i;
 
 	i = 0;
+	if (!s)
+	{
+		write (1, "(null)", 6);
+		return (6);
+	}
 	while (s[i])
 	{
 		ft_putchar(s[i]);

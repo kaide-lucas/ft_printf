@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: kaidda-s <kaidda-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 14:54:54 by codespace         #+#    #+#             */
-/*   Updated: 2025/09/08 14:54:39 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/09/08 14:31:22 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "ft_printf.h"
 
 static int	conversion(char spec_letter, va_list args)
 {
@@ -21,6 +21,8 @@ static int	conversion(char spec_letter, va_list args)
 	else if (spec_letter == 's')
 		return (print_str(va_arg(args, char *)));
 	else if (spec_letter == 'd')
+		return (print_int(args));
+	else if (spec_letter == 'i')
 		return (print_int(args));
 	else if (spec_letter == 'u')
 		return (print_unsigned(args));

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: kaidda-s <kaidda-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 15:41:55 by kaidda-s          #+#    #+#             */
-/*   Updated: 2025/09/05 21:32:29 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/09/08 12:51:58 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "ft_printf.h"
 
 int	ft_hexa(unsigned long int n, const char *base)
 {
