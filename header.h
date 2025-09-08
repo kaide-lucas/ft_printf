@@ -6,7 +6,7 @@
 /*   By: kaidda-s <kaidda-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 12:42:52 by codespace         #+#    #+#             */
-/*   Updated: 2025/09/05 21:37:56 by kaidda-s         ###   ########.fr       */
+/*   Updated: 2025/09/08 15:01:16 by kaidda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int	print_unsigned(va_list args);
 int	ft_hexa(unsigned long int n, const char *base);
 int print_hexa(va_list args);
 int	print_hexa_upper(va_list args);
+int	print_pointer(va_list args);
 
 #endif
